@@ -89,7 +89,7 @@ private
       max = i + max_distance
       max = m - 1 if max > m - 1
 
-      min.upto(max).each do |j|
+      min.upto(max) do |j|
         # If the diagonal value is already greater than the max_distance
         # then we can safety return: the diagonal will never go lower again.
         # See: http://www.levenshtein.net/
